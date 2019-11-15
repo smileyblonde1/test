@@ -1,0 +1,1022 @@
+/* =======================================================================================================================================================================
+   Config
+   ===================================================================================================================================================================== */
+/* ====================================[ Base Colours]====================================*/
+/* ====================================[ Base Fonts ]====================================*/
+/* ====================================[ Mixins ]====================================*/
+/* ======================================================================================================================
+Imports
+====================================================================================================================== */
+/* =======================================================================================================================================================================
+   Config
+   ===================================================================================================================================================================== */
+/* ====================================[ Base Colours]====================================*/
+/* ====================================[ Base Fonts ]====================================*/
+/* ====================================[ Mixins ]====================================*/
+/* ======================================================================================================================
+Index Template
+====================================================================================================================== */
+/* line 12, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* line 19, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.logoHolder {
+  display: flex;
+  align-items: flex-end;
+  height: 115px;
+  justify-content: flex-end;
+  padding-right: 52px;
+}
+
+/* line 25, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.logoHolder .company {
+  font-size: 42px;
+  font-family: "Nunito", sans-serif;
+  color: #003A62;
+  font-weight: bold;
+}
+
+/* line 31, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.logoHolder .logo {
+  font-size: 42px;
+  color: #E21A23;
+  font-family: "Inconsolata", monospace;
+}
+
+/* line 37, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.linksHolder {
+  margin: 0 auto;
+  border-top: 1px #003A60 solid;
+  border-bottom: 1px #003A60 solid;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* line 45, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.linksHolder .menuItems {
+  height: 66px;
+  display: flex;
+  width: 100%;
+  max-width: 1106px;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 52, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.linksHolder .menuItems li {
+  flex: auto;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  color: #003A60;
+  font-weight: bold;
+}
+
+/* line 62, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.linksHolder .menuItems .red a {
+  color: #E21A23;
+}
+
+/* line 67, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.splashHolder {
+  height: 482px;
+  width: 100%;
+  max-width: 1920px;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/splash.jpg");
+  background-position: top center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 81, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.searchHolder {
+  position: relative;
+  top: 70%;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+/* line 87, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.searchHolder .blueBox {
+  width: 100%;
+  max-width: 1106px;
+  height: 81px;
+  background-color: #003A62;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  height: 50%;
+}
+
+/* line 97, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.searchHolder .searchArea {
+  background-color: #FFF;
+  width: 100%;
+  max-width: 1106px;
+  height: 103px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  -moz-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+}
+
+/* line 106, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.searchHolder .searchArea .text {
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: #003A62;
+}
+
+/* line 116, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper {
+  min-height: 600px;
+  max-height: 1031px;
+  background-image: linear-gradient(121deg, #f4f5f5 12.5%, #ffffff 12.5%, #ffffff 50%, #f4f5f5 50%, #f4f5f5 62.5%, #ffffff 62.5%, #ffffff 100%);
+  background-size: 9.33px 15.53px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 122, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featureArea {
+  max-width: 1106px;
+}
+
+/* line 124, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featureArea .headerBox {
+  min-height: 70px;
+  background-color: #003A62;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 130, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featureArea .headerBox h4 {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 136, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featureArea .infoBox {
+  padding: 25px 30px 30px;
+}
+
+/* line 139, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featureArea .newsTitle {
+  font-size: 16px;
+  color: #E21A23;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+/* line 146, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featureArea .newsDate {
+  font-size: 16px;
+  color: #003A60;
+  padding: 30px 0 0;
+}
+
+/* line 152, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featuredText {
+  opacity: 0.1;
+  font-weight: bold;
+  font-size: 200px;
+  font-family: "Nunito", sans-serif;
+  color: #4E778C;
+  text-align: right;
+}
+
+/* line 160, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featuredImg {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  bottom: 92px;
+  position: relative;
+}
+
+/* line 167, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featuredBox {
+  position: relative;
+  justify-content: flex-start;
+  top: -630px;
+  z-index: 2;
+  display: flex;
+}
+
+/* line 174, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.featureWrapper .featureContainer {
+  width: 540px;
+  min-height: 430px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  -moz-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+}
+
+/* line 183, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.whatwedoWrapper {
+  min-height: 325px;
+  background-color: #FFF;
+  border-top: 1px #8F9CA1 solid;
+  border-bottom: 1px #8F9CA1 solid;
+}
+
+/* line 188, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.whatwedoWrapper .textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 193, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.whatwedoWrapper .infoBox {
+  background: #FFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  -moz-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  border: 1px solid #003A60;
+  border-bottom: 10px solid #003A60;
+  min-height: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* line 201, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.whatwedoWrapper .infoBox.active {
+  background: #003A60;
+  color: #FFF;
+}
+
+/* line 204, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.whatwedoWrapper .infoBox.active h4 {
+  color: #FFF;
+}
+
+/* line 208, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.whatwedoWrapper .infoBox:hover {
+  background: #003A60;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* line 212, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.whatwedoWrapper .infoBox:hover h4 {
+  color: #FFF;
+}
+
+/* line 217, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.whatwedoWrapper .arrow {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+/* line 222, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.whatwedoWrapper i.fas.fa-arrow-right {
+  font-size: 20px;
+}
+
+/* line 228, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.relatedSitesWrapper {
+  min-height: 500px;
+  background-image: linear-gradient(121deg, #f4f5f5 12.5%, #ffffff 12.5%, #ffffff 50%, #f4f5f5 50%, #f4f5f5 62.5%, #ffffff 62.5%, #ffffff 100%);
+  background-size: 9.33px 15.53px;
+  border-top: 1px #8F9CA1 solid;
+  border-bottom: 1px #8F9CA1 solid;
+  padding: 20px 0;
+}
+
+/* line 234, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.relatedSitesWrapper .textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 239, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.relatedSitesWrapper .infoBox {
+  background: #FFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  -moz-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  border: 1px solid #003A60;
+  border-bottom: 10px solid #003A60;
+  min-height: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* line 247, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.relatedSitesWrapper .infoBox.active {
+  background: #003A60;
+  color: #FFF;
+}
+
+/* line 250, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.relatedSitesWrapper .infoBox.active h4 {
+  color: #FFF;
+}
+
+/* line 254, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.relatedSitesWrapper .infoBox:hover {
+  background: #003A60;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* line 258, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.relatedSitesWrapper .infoBox:hover h4 {
+  color: #FFF;
+}
+
+/* line 263, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.relatedSitesWrapper .arrow {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+/* line 268, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.relatedSitesWrapper i.fas.fa-chevron-right {
+  font-size: 20px;
+}
+
+/* line 274, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper {
+  min-height: 1221px;
+  background-image: linear-gradient(121deg, #f4f5f5 12.5%, #ffffff 12.5%, #ffffff 50%, #f4f5f5 50%, #f4f5f5 62.5%, #ffffff 62.5%, #ffffff 100%);
+  background-size: 9.33px 15.53px;
+  padding: 20px;
+}
+
+/* line 278, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .featuredText {
+  opacity: 0.1;
+  font-weight: bold;
+  font-size: 200px;
+  font-family: "Nunito", sans-serif;
+  color: #4E778C;
+  z-index: -1;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 290, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 293, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .headerBox {
+  width: 100%;
+  max-width: 1106px;
+  min-height: 70px;
+  background-color: #003A62;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  margin-top: -15px;
+}
+
+/* line 303, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .headerBox h1 {
+  margin: 0;
+}
+
+/* line 307, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .panelArea {
+  background-color: #FFF;
+  width: 100%;
+  max-width: 1106px;
+  padding: 30px;
+  -webkit-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  -moz-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  z-index: 1;
+}
+
+/* line 314, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .panelArea .panelTxt {
+  padding: 0 20px 0 0;
+}
+
+/* line 316, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .panelArea .panelTxt:before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: url("../images/noun_Quotation Marks_479904-1.png") no-repeat;
+}
+
+/* line 325, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .panelArea .quote {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: #003A60;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  padding: 0 40px 30px;
+}
+
+/* line 333, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .panelArea .quote:after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: url("../images/noun_Quotation Marks_479904.png") no-repeat;
+}
+
+/* line 343, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .panelArea .quoteName {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #003A60;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 350, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .panelArea .blurb {
+  margin: 20px 0;
+}
+
+/* line 353, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderTop .panelArea .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 0 20px 0 0;
+  padding: 0;
+  background: #C3002F;
+  min-width: 254px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+/* line 358, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderBottom {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0;
+}
+
+/* line 362, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderBottom .panelArea {
+  background-color: #FFF;
+  width: 100%;
+  max-width: 1106px;
+  min-height: 393px;
+  padding: 30px;
+  -webkit-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  -moz-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+}
+
+/* line 370, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderBottom .caseStudyBoxes {
+  min-height: 285px;
+}
+
+/* line 373, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.casestudyWrapper .CSHolderBottom p {
+  font-weight: bold;
+}
+
+/* line 379, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper {
+  background: #FFF;
+  padding: 0 98px 70px;
+  border-top: 1px #707070 solid;
+}
+
+/* line 383, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .featuredText {
+  opacity: 0.1;
+  font-weight: bold;
+  font-size: 130px;
+  font-family: "Nunito", sans-serif;
+  color: #003A62;
+  height: 0;
+}
+
+/* line 391, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .dateHolder {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1px;
+}
+
+/* line 395, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .dateHolder .dateBlock {
+  background: #003A60;
+  color: #FFF;
+  width: 87px;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+}
+
+/* line 410, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 0 20px 0 0;
+  padding: 0;
+  background: #C3002F;
+  min-width: 254px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+/* line 413, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .duoPanel {
+  z-index: 1;
+  margin: 140px 0 0;
+}
+
+/* line 417, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .newsBloc, .newsEventsWrapper .eventsBloc {
+  background: #FFF;
+  -webkit-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  -moz-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+}
+
+/* line 420, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .newsBloc .headerBox, .newsEventsWrapper .eventsBloc .headerBox {
+  height: 70px;
+  background-color: #003A62;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 426, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .newsBloc .headerBox h4, .newsEventsWrapper .eventsBloc .headerBox h4 {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 431, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .newsBloc .infoBox, .newsEventsWrapper .eventsBloc .infoBox {
+  padding: 25px 30px 30px;
+}
+
+/* line 434, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .newsBloc .newsTitle, .newsEventsWrapper .eventsBloc .newsTitle {
+  font-size: 16px;
+  color: #E21A23;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+/* line 440, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .newsBloc .calenderInfo, .newsEventsWrapper .eventsBloc .calenderInfo {
+  font-size: 16px;
+  color: #003A60;
+  font-weight: bold;
+}
+
+/* line 446, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .featureTxt {
+  background: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px;
+  -webkit-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  -moz-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+}
+
+/* line 452, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .featureTxt .newsTitle {
+  color: #E21A23;
+  text-transform: uppercase;
+}
+
+/* line 457, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .blockInfo {
+  min-width: 255px;
+  margin: 30px 15px;
+  max-width: 255px;
+  padding: 0;
+}
+
+/* line 462, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .blockInfo:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 466, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .blockInfo:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* line 470, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.newsEventsWrapper .blockInfo:hover {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+/* line 479, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.subscribeWrapper {
+  min-height: 350px;
+  background: #FFF;
+}
+
+/* line 482, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.subscribeWrapper .boxedArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 486, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.subscribeWrapper .boxedArea .panelArea {
+  background-color: #FFF;
+  width: 100%;
+  max-width: 882px;
+  padding: 0 50px;
+  min-height: 120px;
+  -webkit-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  -moz-box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  box-shadow: 0px 3px 10px 0 rgba(112, 112, 112, 0.26);
+  align-items: center;
+}
+
+/* line 495, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.subscribeWrapper .boxedArea .panelText {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 500, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.subscribeWrapper .boxedArea .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 0 20px 0 0;
+  padding: 0;
+  background: #C3002F;
+  min-width: 254px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+/* line 508, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+footer {
+  color: #FFF;
+  background-color: #003A60;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 3em 0 0;
+}
+
+/* line 518, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+ul.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+  width: 70%;
+  margin: 1em auto;
+  padding: 0 10px;
+}
+
+/* line 527, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+ul.innerFooterList {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 530, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+ul.innerFooterList li {
+  flex-wrap: wrap;
+}
+
+/* line 536, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.footerLinks li {
+  flex: 1;
+  list-style-type: none;
+  padding: 0 1px;
+}
+
+/* line 540, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+.footerLinks li a {
+  color: #D6D6D6;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0;
+  line-height: 32px;
+}
+
+/* line 549, C:/Users/Lea/Desktop/Squiz/scss/base/_layout.scss */
+h2.footerHeader {
+  font-family: inherit;
+  font-size: 100%;
+  color: #FFF;
+  font-weight: normal;
+}
+
+/* ======================================================================================================================
+   Imports
+   ====================================================================================================================== */
+/* =======================================================================================================================================================================
+   Config
+   ===================================================================================================================================================================== */
+/* ====================================[ Base Colours]====================================*/
+/* ====================================[ Base Fonts ]====================================*/
+/* ====================================[ Mixins ]====================================*/
+/* ======================================================================================================================
+   Index Defaults
+   ====================================================================================================================== */
+/* line 13, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  color: #003A60;
+  font-size: 16px;
+  background: #FFF;
+}
+
+/* line 20, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+html {
+  overflow-x: hidden;
+}
+
+/* line 23, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+/* line 30, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  color: #003A60;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 0 10px 0;
+}
+
+/* line 38, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: #FFF;
+}
+
+/* line 44, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: #003A60;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0;
+}
+
+/* line 53, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+p {
+  font-size: 16px;
+  color: #003A60;
+  line-height: 22px;
+}
+
+/* line 58, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+a {
+  color: #003A60;
+}
+
+/* line 62, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* line 66, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100vh;
+}
+
+/* line 73, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+section#home .wrapper {
+  padding: 0 10px;
+}
+
+/* line 77, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+input,
+input:active,
+input:focus,
+input:focus-within,
+input:hover,
+input:visited {
+  font-size: 16px !important;
+}
+
+/*---------Scroll bars-----------*/
+/* line 96, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+/* line 100, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+::-webkit-scrollbar:vertical {
+  width: 7px;
+}
+
+/* line 104, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+::-webkit-scrollbar:horizontal {
+  height: 7px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 58, 96, 0.16);
+}
+
+/* line 110, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 58, 96, 0.36);
+  border-radius: 10px;
+  border: 2px solid rgba(0, 58, 96, 0.16);
+}
+
+/* line 116, C:/Users/Lea/Desktop/Squiz/scss/base/_defaults.scss */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(0, 58, 96, 0.16);
+}
+
+/* ======================================================================================================================
+   Imports
+   ====================================================================================================================== */
+/* =======================================================================================================================================================================
+   Config
+   ===================================================================================================================================================================== */
+/* ====================================[ Base Colours]====================================*/
+/* ====================================[ Base Fonts ]====================================*/
+/* ====================================[ Mixins ]====================================*/
+/* ======================================================================================================================
+   Small Grid
+   ====================================================================================================================== */
+/*----------- Small only -----------*/
+@media screen and (max-width: 39.9375em) {
+  /* line 15, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .CSHolder .headerBox {
+    margin-top: 20px;
+  }
+  /* line 19, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .logoHolder {
+    padding-right: 0;
+  }
+  /* line 22, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .whatwedoWrapper {
+    padding: 20px;
+  }
+  /* line 25, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .panelImg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 30, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .newsBlocHolder {
+    margin-bottom: 30px;
+  }
+  /* line 33, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .newsEventsWrapper, .relatedSitesWrapper {
+    padding: 20px;
+  }
+  /* line 37, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .casestudyWrapper .featuredText {
+    display: none;
+  }
+  /* line 40, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .casestudyWrapper .CSHolderTop .headerBox {
+    margin-top: 20px;
+  }
+  /* line 45, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .whatwedoWrapper .infoBox {
+    min-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 51, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .subscribeWrapper {
+    min-height: auto;
+    padding: 20px;
+  }
+  /* ----------- Footer ----------- */
+  /* line 57, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  ul.footerLinks {
+    width: 100%;
+  }
+  /* line 61, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .footerLinks li {
+    flex: 0 0 33.33333%;
+  }
+  /* line 64, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .footerLinks li a {
+    font-size: 86%;
+  }
+  /* line 67, C:/Users/Lea/Desktop/Squiz/scss/base/_small.scss */
+  .footerLinks li h2 {
+    padding: 0;
+    min-height: 50px;
+  }
+}
+
+/* ======================================================================================================================
+Imports
+====================================================================================================================== */
+/* =======================================================================================================================================================================
+   Config
+   ===================================================================================================================================================================== */
+/* ====================================[ Base Colours]====================================*/
+/* ====================================[ Base Fonts ]====================================*/
+/* ====================================[ Mixins ]====================================*/
+/* ======================================================================================================================
+Medium Grid
+====================================================================================================================== */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  /* line 12, C:/Users/Lea/Desktop/Squiz/scss/base/_medium.scss */
+  .CSHolder .headerBox {
+    margin-top: 20px;
+  }
+  /* line 16, C:/Users/Lea/Desktop/Squiz/scss/base/_medium.scss */
+  .logoHolder {
+    padding-right: 0;
+  }
+  /* line 19, C:/Users/Lea/Desktop/Squiz/scss/base/_medium.scss */
+  .splashHolder {
+    height: 255px;
+  }
+  /* line 22, C:/Users/Lea/Desktop/Squiz/scss/base/_medium.scss */
+  .whatwedoWrapper {
+    padding: 20px;
+  }
+  /* line 27, C:/Users/Lea/Desktop/Squiz/scss/base/_medium.scss */
+  ul.footerLinks {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=../css/base.map */
